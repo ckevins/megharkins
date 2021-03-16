@@ -1,5 +1,11 @@
-h1, h2, h3, p {
+h1, h2, h3, a {
   color: maroon;
+  font-family: 'Cormorant Unicase';
+}
+
+p {
+  color: maroon;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .home, .about, .contact {
@@ -10,14 +16,14 @@ h1, h2, h3, p {
   width: 100%;
 }
 
-.home-image {
+.page-image {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.home-text {
+.page-text {
   position: relative;
   padding: 50px;
   width: 40%;
@@ -25,11 +31,16 @@ h1, h2, h3, p {
   overflow: hidden;
 }
 
+.page-specific-text {
+  animation: fade 1s;
+}
+
 nav {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
+  animation: slide 3s;
 }
 
 ul {
@@ -39,11 +50,29 @@ ul {
 li {
   list-style-type: none;
   text-align: left;
-  padding: 20px
+  padding: 20px;
+  font-weight: bolder;
+  transition: 1s;
 }
 
 li a {
-  color: maroon;
   font-size: calc(10px + 2vmin);
   text-decoration: none;
+}
+
+li:hover {
+  padding-left: 30px;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide {
+  from {transform:translate(-200px)}
+  to {transform: translate(0);}
 }
