@@ -5,15 +5,19 @@ h1, h2, h3, a {
 
 p {
   color: maroon;
-  font-family: 'Montserrat', sans-serif;
+  font-family: serif;
+}
+
+body {
+  background-color: maroon;
 }
 
 .home, .about, .contact {
-  background-color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   width: 100%;
+  overflow: hidden;
 }
 
 .page-image {
@@ -24,16 +28,18 @@ p {
 }
 
 .page-text {
+  font-size: calc(10px + 2vmin);
   position: relative;
   padding: 50px;
   width: 40%;
   margin-left: 50%;
-  overflow: hidden;
 }
 
 .page-specific-text {
   animation: fade 1s;
 }
+
+
 
 nav {
   position: absolute;
@@ -56,13 +62,30 @@ li {
 }
 
 li a {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 3vmin);
   text-decoration: none;
 }
 
 li:hover {
   padding-left: 30px;
   transform: scale(1.1);
+  transition: 1s;
+}
+
+.gal-button {
+  border: maroon solid 2px;
+  font-size: 1em;
+  font-family: 'Cormorant Unicase';
+  height: 100%;
+  width: 75%;
+  margin: 10px;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.gal-button:hover {
+  background-color: maroon;
+  color: white;
   transition: 1s;
 }
 
