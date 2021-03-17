@@ -27,6 +27,13 @@ body {
   left: 0;
 }
 
+.celtic-knot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+}
+
 .page-text {
   font-size: calc(10px + 2vmin);
   position: relative;
