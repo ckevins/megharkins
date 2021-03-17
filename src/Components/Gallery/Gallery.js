@@ -1,6 +1,6 @@
 import React from "react";
 import ReactBnbGallery from 'react-bnb-gallery';
-import 'react-bnb-gallery/dist/style.css';
+import '../../bnb.css';
 import megSitting from '../Home/Meg2018-5.jpg';
 import threepenny1 from './photos/threepenny/pic1.png';
 import threepenny2 from './photos/threepenny/pic2.png';
