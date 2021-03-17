@@ -199,18 +199,20 @@ export class Gallery extends React.Component {
                 <img className='page-image' src={megSitting} alt='pic of Meg sitting'/>
                 <div className='page-text'>
                     <h1>Meg Harkins</h1>
-                    <h3 className='page-specific-text'>Galleries:</h3>
-                    <button className='gal-button' onClick={() => this.toggleGallery(threepennyOpera)}>The Threepenny Opera</button>
-                    <br></br>
-                    <button className='gal-button' onClick={() => this.toggleGallery(parade)}>Parade</button>
-                    <br></br>
-                    <button className='gal-button' onClick={() => this.toggleGallery(peter)}>Peter and the Starcatcher</button>
-                    <br></br>
-                    <button className='gal-button' onClick={() => this.toggleGallery(springAwakening)}>Spring Awakening</button>
-                    <br></br>
-                    <button className='gal-button' onClick={() => this.toggleGallery(scarletLetter)}>The Scarlet Letter</button>
-                    <br></br>
-                    <button className='gal-button' onClick={() => this.toggleGallery(misc)}>Misc.</button>
+                    <div className='page-specific-text'>
+                      <h3>Galleries:</h3>
+                      <button className='gal-button' onClick={() => this.toggleGallery(threepennyOpera)}>The Threepenny Opera</button>
+                      <br></br>
+                      <button className='gal-button' onClick={() => this.toggleGallery(parade)}>Parade</button>
+                      <br></br>
+                      <button className='gal-button' onClick={() => this.toggleGallery(peter)}>Peter and the Starcatcher</button>
+                      <br></br>
+                      <button className='gal-button' onClick={() => this.toggleGallery(springAwakening)}>Spring Awakening</button>
+                      <br></br>
+                      <button className='gal-button' onClick={() => this.toggleGallery(scarletLetter)}>The Scarlet Letter</button>
+                      <br></br>
+                      <button className='gal-button' onClick={() => this.toggleGallery(misc)}>Misc.</button>
+                    </div>
                     <ReactBnbGallery
                         className='gallery'
                         show={this.state.galleryOpened}
