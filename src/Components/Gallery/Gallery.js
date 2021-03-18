@@ -1,8 +1,6 @@
 import React from "react";
 import ReactBnbGallery from 'react-bnb-gallery';
 import '../../bnb.css';
-import megSitting from '../Home/Meg2018-5.jpg';
-import celticKnot from '../Home/celtic-knot.png';
 import threepenny1 from './photos/threepenny/pic1.png';
 import threepenny2 from './photos/threepenny/pic2.png';
 import parade1 from './photos/parade/parade1.jpg';
@@ -33,7 +31,6 @@ import misc3 from './photos/misc/misc3.png';
 
 
 
-let photos;
 
 const threepennyOpera = [{
     photo: threepenny1,
@@ -197,30 +194,22 @@ export class Gallery extends React.Component {
     render () {
         return (
             <div className='home'>
-                <img className='page-image' src={megSitting} alt='pic of Meg sitting'/>
-                <img className='celtic-knot' src={celticKnot} alt='celtic knot'/>
-                <div className='page-text'>
-                    <h1>Meg Harkins</h1>
-                    <div className='page-specific-text'>
-                      <h3>Galleries:</h3>
-                      <button className='gal-button' onClick={() => this.toggleGallery(threepennyOpera)}>The Threepenny Opera</button>
-                      <br></br>
-                      <button className='gal-button' onClick={() => this.toggleGallery(parade)}>Parade</button>
-                      <br></br>
-                      <button className='gal-button' onClick={() => this.toggleGallery(peter)}>Peter and the Starcatcher</button>
-                      <br></br>
-                      <button className='gal-button' onClick={() => this.toggleGallery(springAwakening)}>Spring Awakening</button>
-                      <br></br>
-                      <button className='gal-button' onClick={() => this.toggleGallery(scarletLetter)}>The Scarlet Letter</button>
-                      <br></br>
-                      <button className='gal-button' onClick={() => this.toggleGallery(misc)}>Misc.</button>
-                    </div>
-                    <ReactBnbGallery
-                        className='gallery'
-                        show={this.state.galleryOpened}
-                        photos={this.state.photos}
-                        onClose={this.toggleGallery} />
-                </div>
+              <h3>Galleries:</h3>
+              <button className='gal-button' onClick={() => this.toggleGallery(threepennyOpera)}>The Threepenny Opera</button>
+              <br></br>
+              <button className='gal-button' onClick={() => this.toggleGallery(parade)}>Parade</button>
+              <br></br>
+              <button className='gal-button' onClick={() => this.toggleGallery(peter)}>Peter and the Starcatcher</button>
+              <br></br>
+              <button className='gal-button' onClick={() => this.toggleGallery(springAwakening)}>Spring Awakening</button>
+              <br></br>
+              <button className='gal-button' onClick={() => this.toggleGallery(scarletLetter)}>The Scarlet Letter</button>
+              <br></br>
+              <button className='gal-button' onClick={() => this.toggleGallery(misc)}>Misc.</button>
+              <ReactBnbGallery
+                  show={this.state.galleryOpened}
+                  photos={this.state.photos}
+                  onClose={this.toggleGallery} />
             </div>
         )
     }
