@@ -38,8 +38,7 @@ li a {
 }
 
 li:hover {
-  padding-left: 30px;
-  transform: scale(1.1) translate(5px);
+  transform: scale(1.1) translate(30px);
   transition: 1s;
 }
 
