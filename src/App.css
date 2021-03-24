@@ -116,6 +116,13 @@ td {
   font-size: 2vmin;
 }
 
+.print-pdf {
+  color: maroon;
+  display: flex;
+  justify-content: right;
+  margin-right: 5%;
+}
+
 .flex-container {
   display: flex;
   align-items: stretch;

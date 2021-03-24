@@ -1,8 +1,14 @@
 import React from "react";
+import {
+    FaPrint
+  } from 'react-icons/fa';
 
 export function Resume () {
     return (
         <div className='resume'>
+            <div className='print-pdf'>
+                <a href='docs/MegHarkinsResume.pdf'><FaPrint/></a>
+            </div>
             <div className='flex-container'>
                 <div className='resume-left-column'>
                     <div className='resume-div'>
@@ -11,12 +17,14 @@ export function Resume () {
                                 <p>B.A. in Theatre & Performance Studies, 2017</p>
                                 <p>B.S. in Journalism & Citizen Media, 2017</p>
                             <h4>Aurora Theatre</h4>
-                                <p>Lawrenceville, GA</p><p>Acting Apprentice 2017-2018</p>
-                            <h4>Working Title Playwrights</h4>
-                                <p>Atlanta, GA</p>
-                                <p>Acting Ensemble Member</p>
+                                <p>Lawrenceville, GA</p>
+                                <p>Acting Apprentice 2017-2018</p>
                             <h4>Dad's Garage Theatre Company</h4>
-                                <p>Atlanta, GA</p><p>Improv Level II & Level III</p>
+                                <p>Atlanta, GA</p>
+                                <p>Improv Level II & Level III</p>
+                            <h4>Drama Inc.</h4>
+                                <p>Atlanta, GA</p>
+                                <p>On Camera Level I</p>
                     </div>
                 </div>
                 <div className= 'resume-right-column'>
@@ -75,7 +83,7 @@ export function Resume () {
                                 <td className='show-column'>Stories from Planet Earth</td>
                                 <td className='role-column'>Storyteller/Musician</td>
                                 <td className='company-column'>Atlanta Fringe Festival</td>
-                                <td></td>
+                                <td>Charles Parrott</td>
                             </tr>
                         </table>
                         <p>* Cancelled due to COVID-19</p>

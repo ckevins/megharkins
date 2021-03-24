@@ -209,7 +209,8 @@ export class Gallery extends React.Component {
               <ReactBnbGallery
                   show={this.state.galleryOpened}
                   photos={this.state.photos}
-                  onClose={this.toggleGallery} />
+                  onClose={this.toggleGallery}
+                  />
             </div>
         )
     }
